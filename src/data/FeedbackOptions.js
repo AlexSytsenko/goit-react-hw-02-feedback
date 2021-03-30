@@ -1,3 +1,3 @@
-const FEEDBACKOPTIONS = ['good', 'neutral', 'bad'];
+const FEEDBACK_OPTIONS = ['good', 'neutral', 'bad'];
 
-export default FEEDBACKOPTIONS;
+export default FEEDBACK_OPTIONS;
