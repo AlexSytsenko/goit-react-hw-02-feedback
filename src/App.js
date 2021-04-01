@@ -13,7 +13,7 @@ class App extends Component {
   };
 
   handleButtonClick = e => {
-    const target = e.currentTarget.innerText;
+    const target = e.currentTarget.innerText.toLowerCase();
 
     this.setState(prevState => ({
       [target]: prevState[target] + 1,
@@ -37,7 +37,7 @@ class App extends Component {
     const positivePercentage = this.countPositiveFeedbackPercentage();
 
     return (
-      <>
+      <div className="content__container">
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={FEEDBACK_OPTIONS}
@@ -54,7 +54,7 @@ class App extends Component {
             positivePercentage={positivePercentage}
           />
         </Section>
-      </>
+      </div>
     );
   }
 }
